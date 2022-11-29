@@ -225,7 +225,6 @@ header .navbar ul li a:hover{
     font-size: 2rem;
     color:#fff;
 }
-
 .education .box-container{
     display: flex;
     align-items: center;
@@ -292,7 +291,9 @@ header .navbar ul li a:hover{
     overflow: hidden;
     cursor: pointer;
 }
-
+.github-langs-stats {
+    width: 100%;
+}
 .portfolio .box-container .box img{
     height:100%;
     width:100%;
@@ -409,27 +410,37 @@ header .navbar ul li a:hover{
     .home{
         padding:1rem 4rem;
     }
-
+    .spotify-a{
+        width: 60%;
+    }
+    .spotify-b{
+        width: 60%;
+    }
+    
 }
 
 @media (max-width:991px){
+    header{
+        left:-120%;
+    }
 
-   header{
-       left:-120%;
-   }
+    #menu{
+        display: block;
+    }
 
-   #menu{
-       display: block;
-   }
+    header.toggle{
+        left:0%;
+    }
 
-   header.toggle{
-    left:0%;
-   }
-
-   body{
-       padding:0;
-   }
-
+    body{
+        padding:0;
+    }
+    .github-langs-stats {
+        width: 100%;
+    }
+    .github-profile-stats {
+        width: 100%;
+    }
 }
 
 @media (max-width:768px){
@@ -437,8 +448,14 @@ header .navbar ul li a:hover{
     html{
         font-size: 50%;
     }
+    .github-langs-stats {
+        width: 100%;
+    }
+    .github-profile-stats {
+        width: 100%;
+    }
  
- }
+}
 
 @media (max-width:400px){
 
@@ -465,5 +482,8 @@ header .navbar ul li a:hover{
     .contact .row form{
         margin:3rem 0;
     }
+    .github-profile-stats {
+        width: 100%;
+    }
 
- }
+}
